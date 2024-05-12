@@ -78,7 +78,7 @@
 			width: 30%;
 			height: 10%;
 		}
-		@media(min-width: 200px) and (max-width:850px ){
+		@media(min-width: 100px) and (max-width:850px ){
 
 		.imagem-site{
 			border-radius: 20px 20px 50px 20px;
@@ -120,7 +120,7 @@
 
 		.grid{
 			display: grid; /* o diplay serve para mostrar o espaço que vamos trabalhar*/
-			grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+			grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)) ;
 			/* repeat(auto-fill) para reconher o tamanho da tela automaica para a div */
 			/* fr é o fragmento dentro do espaço */
 			/* grid-tamplate-columns ser para selecionar o modelo que vamos trabalhar no caso aqui sera por colunas 6x6 */ 
@@ -193,4 +193,9 @@
 
 		a:hover{ /* para fazer alteraçães nos links */
 			color: #ffff00;
+		}
+
+		.wpp-logo{
+			width: 1%;
+			height:1%;
 		}
