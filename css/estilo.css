@@ -1,0 +1,196 @@
+/*px para posicionamento fixo*/
+		/*% para possicionar no tamanhdo da tela*/
+		/* O rem é útil para criar layouts mais flexíveis e escaláveis*/
+		/* font-size -- serve para definir o tamanho da letra do site */
+		/*para referenciar o id se ussa o #*/
+		/* para referenciar a classe se ussa o . (ponto) */
+
+		*{
+			margin: 0;
+			border: 0;
+			padding:0;
+		}
+		html{
+			font-family: arial;
+			font-size: 62.5%; 
+		}
+		header{
+			background-color: #000;
+			color: #fff;
+			font-size: 1.8rem;  /* rem é o Em relação ao tamanho da fonte do elemento raiz */
+			padding: 1rem;
+			padding-top: 2rem;
+			position: fixed; /* para o topo da pagin ficar fixo*/
+			width: 100%;
+		}
+		footer{
+			background-color: #000;
+			color: #fff;
+			font-size: 1.8rem;
+			padding: 1rem;
+		}
+		.conteudo{
+			font-size: 1.6rem;
+			background-color: #fff;
+			padding: 1.5rem;
+			text-align: justify; /* para o texto ficar no centro da pagina*/
+			margin: 0 auto;
+			max-width: 90%; /*para escolher a "grossura" do texto*/
+
+		}
+		.conteudo-topo{
+			font-size: 1.6rem;
+			background-color: #fff;
+			padding: 1.5rem;
+			text-align: justify; /* para o texto ficar no centro da pagina*/
+			margin: 0 auto;
+			max-width: 85%; /*para escolher a "grossura" do texto*/
+			padding-top: 7rem;
+			max-width: 90%;
+			padding-top: 10rem;
+		}
+
+
+		
+		h1{
+			font-size: 2.5rem;
+		}
+
+		h2{
+			font-size: 1.9rem;
+		}
+
+		h3{
+			font-size: 1.7rem;
+		}
+
+		h4{
+			font-size: 1.6rem;
+		}
+
+
+
+		figure{
+			text-align: center;
+		}
+		.imagem-site{
+			border-radius: 20px 20px 50px 20px;
+			width: 30%;
+			height: 10%;
+		}
+		@media(min-width: 200px) and (max-width:850px ){
+
+		.imagem-site{
+			border-radius: 20px 20px 50px 20px;
+			width: 90%;
+			height:70%;
+		}
+
+		}
+
+		#compras{
+			background-color: #FFD700; /* cor de fundo do site*/
+			width: 100px; /* width - largura */
+			height: 68.5px; /* height - altura*/
+			right: 0; /* right - para a direita do site, left - para a esquerda */
+			position: fixed; /* position para posicionar o conteudo */
+			text-align: center; /* text-align serve para alinhar o conteudo */
+			margin-top: 0rem; /* margin - onde o conteudo vai ficar no site */
+			font-size: 20px; /* font-size -- tamanho da letra*/
+			z-index: 1;
+			border-radius: 0px 0px 0px 0px; /* para mecher na borda da imagem*/
+		}
+
+		#compras-texto{
+			text-align: center;
+			margin-top: 1rem;
+		}
+
+		#btn-compras{
+			margin-top: 0.5rem;
+			padding: 5px;
+			border-radius: 0px;
+			background-color: #F5F5DC;
+		}
+
+		#grid-conteudo{
+			border-radius: 20px;
+			background-color: #dcdcdc;
+		}
+
+		.grid{
+			display: grid; /* o diplay serve para mostrar o espaço que vamos trabalhar*/
+			grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+			/* repeat(auto-fill) para reconher o tamanho da tela automaica para a div */
+			/* fr é o fragmento dentro do espaço */
+			/* grid-tamplate-columns ser para selecionar o modelo que vamos trabalhar no caso aqui sera por colunas 6x6 */ 
+			grid-gap: 1px; /* grid-gap - para definir a separação dos itens */
+			margin: 0 auto;
+		}
+
+		.grid div{
+			background-color: #fff;
+			text-align: center;
+			padding: 5px;
+		}
+
+		#formulario{
+			background-color: #dcdcdc;
+		}
+
+		input{
+			border:solid;
+			padding: 5px;
+			border-radius: 10px;
+			font-size: 1.5rem;
+		}
+
+		#mensagem{
+			border:solid;
+			padding: 5px;
+			border-radius: 10px;
+			font-size: 1.5rem;
+		}
+
+		#btn-limpar{
+			background-color: #ff0000;
+			color: #fff;
+			text-align: center;
+			padding: 5px;
+			border: solid;
+			border-color: #000000; /* para colocar uma cor na borda */
+			font-weight: bold;
+		}
+
+		#btn-enviar{
+			background-color: #98FB98;
+			color: #000000;
+			text-align: center;
+			padding: 5px;
+			border: solid;
+			border-color: #000000; /* para colocar uma cor na borda */
+			font-weight: bold;
+		}
+
+		.conteudo{
+			border-radius: 20px;
+		}
+
+		nav{
+			text-align: center;
+			font-size: 1.6rem;
+			word-spacing: 10px; /* para da espaço entre um obejto e outro no css */
+			margin-right: 5%;
+			padding-bottom: 5px;
+		}
+		
+		
+		a{
+			text-decoration: none;
+			color: #fff;
+			font-weight: bold;
+		}
+
+		a:hover{ /* para fazer alteraçães nos links */
+			color: #ffff00;
+		}
