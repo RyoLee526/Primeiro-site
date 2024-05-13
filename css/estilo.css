@@ -10,6 +10,11 @@
 			border: 0;
 			padding:0;
 		}
+
+		.icone-topo{
+			border-radius:10px;
+		}
+
 		html{
 			font-family: arial;
 			font-size: 62.5%; 
